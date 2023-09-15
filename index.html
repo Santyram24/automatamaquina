@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Definición de la codificación de caracteres -->
+        <meta charset="UTF-8">
+        <!-- Configuración de la vista en dispositivos móviles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título de la página -->
+        <title>Maquina expendedora</title>
+        <!-- Enlace al archivo CSS externo -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Título principal de la página -->
+        <h1 class="titulo">MAQUINA EXPENDEDORA</h1>
+
+        <!-- Contenedor de la lista de precios -->
+        <div class="listadeprecios">
+            <!-- Encabezado de la lista de precios -->
+            <h4>Lista de precios</h4>
+            <!-- Elementos de la lista de precios -->
+            <ul>
+                <!-- Elemento de lista con su respectivo precio -->
+                <li>
+                    <h4>A-B-C: 500</h4>
+                </li>
+                <!-- Otros elementos de lista similares -->
+                <li>
+                    <h4>D-E: 1000</h4>
+                </li>
+                <li>
+                    <h4>F-G: 1500</h4>
+                </li>
+                <li>
+                    <h4>H-I: 2000</h4>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contenedor de la caja expendedora -->
+        <div class="cajaexpendedora">
+            <!-- Contenedor de cajas de texto y botones -->
+            <div class="cajasdetexto">
+                <!-- Cuadro de texto -->
+                <textarea name id cols="13" rows="7" style="resize: none;"></textarea><br>
+                <!-- Botón para pedir productos -->
+                <button type="button" class="pedir" id="BotonPedir">Pedir</button>
+                <!-- Contenedor de salida de información -->
+                <div class="salida" style="width: 150px; height: 150px; overflow: hidden;"></div>
+            </div>
+            <!-- Vitrina con productos -->
+            <div class="vitrina">
+                <!-- Contenedor de productos -->
+                <div class="productos">
+                    <!-- Primera fila de productos -->
+                    <div class="productosq1">
+                        <!-- Producto con imagen -->
+                        <div class="producto">
+                            <img src="img/Sparkies.png" alt>
+                            <img src="img/Quipitos.png" alt>
+                            <img src="img/Galletas Noel Wafer x 18.png" alt>
+                        </div> <br>
+                        <!-- Botones de elección de productos -->
+                        <div class="botones">
+                            <button class="Eleccion" id="E1">A</button>
+                            <button class="Eleccion" id="E2">B</button>
+                            <button class="Eleccion" id="E3">C</button>
+                        </div>
+                    </div>
+                    <!-- Otras filas de productos similares -->
+                    <div class="productosq2">
+                        <!-- Producto con imagen -->
+                        <div class="producto">
+                            <img src="img/Galletas Milo.png" alt>
+                        </div>
+                        <!-- Producto con imagen -->
+                        <div class="producto">
+                            <img src="img/Galletas Cocosette.png" alt>
+                        </div><br>
+                        <!-- Botones de elección de productos -->
+                        <div class="botones">
+                            <button class="Eleccion" id="E4">D</button>
+                            <button class="Eleccion" id="E5">E</button>
+                        </div>
+                    </div>
+                    <!-- Otras filas de productos similares -->
+                    <div class="productosq3">
+                        <!-- Producto con imagen -->
+                        <div class="producto">
+                            <img src="img/Galletas Ramo.png" alt>
+                        </div>
+                        <!-- Producto con imagen -->
+                        <div class="producto">
+                            <img src="img/Nucita.png" alt>
+                        </div><br>
+                        <!-- Botones de elección de productos -->
+                        <div class="botones">
+                            <button class="Eleccion" id="E4">F</button>
+                            <button class="Eleccion" id="E5">G</button>
+                        </div>
+                    </div>
+                    <!-- Otras filas de productos similares -->
+                    <div class="productosq4">
+                        <!-- Producto con imagen -->
+                        <div class="producto">
+                            <img src="img/Tubito - Leche Condensada.png" alt>
+                        </div>
+                        <!-- Producto con imagen -->
+                        <div class="producto">
+                            <img src="img/Chocolatina Gol.png" alt>
+                        </div><br>
+                        <!-- Botones de elección de productos -->
+                        <div class="botones">
+                            <button class="Eleccion" id="E4">H</button>
+                            <button class="Eleccion" id="E5">I</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cargar el script principal -->
+        <script src="main.js"></script>
+    </body>
+</html>
