@@ -6,7 +6,7 @@ const error = "no es automata";//mensaje de error
 document.getElementById('BotonPedir').addEventListener('click', pedir);
 
 function pedir() {
-    salida('I');
+    salida();
 }
 
 function salida(producto) {
