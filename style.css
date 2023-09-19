@@ -19,12 +19,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* Estilos para elementos con la clase "listadeprecios" */
 .listadeprecios {
     width: 200px; /* Ancho del elemento */
-    background-color: red; /* Color de fondo rojo */
+    background-color:yellow; /* Color de fondo rojo */
     height: 200px; /* Altura del elemento */
     margin-left: 50px; /* Margen izquierdo de 50px */
     margin-top: 80px; /* Margen superior de 80px */
     position: absolute; /* Posicionamiento absoluto */
 }
+
 
 /* Estilos para listas desordenadas dentro de elementos con la clase "listadeprecios" y sus elementos de lista */
 .listadeprecios ul li {

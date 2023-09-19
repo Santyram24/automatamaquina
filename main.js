@@ -7,57 +7,45 @@ const letraQ3 = "FG";
 const letraQ4 = "HI";
 
 //combinacion validas para la cadena
-const Q1 = ["Q"];
+const Q1 = ["0"];
 const Q2 = ["1", "00"];
 const Q3 = ["000", "10", "01"];
 const Q4 = ["11", "100", "001", "010", "0000"];
-
-
 
 
 //funcion para ejecutar en el boton
 document.getElementById('BotonPedir').addEventListener('click', pedir);
 
 function pedir() {
-    //salida(PrimeraLetra());
+    //salida();
     compararCadenas();
 
 }
 
 function compararCadenas() {
-    //caja de texto
-    var texto = document.getElementById("miTextarea").value.toString();
+    // Obtén el valor del textarea
+    var cadena = document.getElementById("miTextarea").value.toString();
 
-    // Verificar si el textarea contiene al menos un carácter
-    if (texto.length > 0) {
-        // Tomar la segunda cadena desde el segundo carácter en adelante
-        var segundaCadena = texto.substring(1);
+    // Obtén el primer carácter del string
+    let primerCaracter = cadena.charAt(0);
+    //quita el primer caracter y crea una nueva cadena
+    let monedas = cadena.substring(1);
 
-        // Comparar la cadena por defecto con la segunda cadena sin el primer carácter
-        var cadenaPorDefecto = "ola"; // Cambia esto por tu cadena por defecto
-        if (cadenaPorDefecto === segundaCadena) {
-            alert("Las cadenas son iguales sin el primer carácter.");
-        } else {
-            alert("Las cadenas son diferentes.");
-        }
+
+    // Verifica si el primer carácter está en el segundo string
+    if (letraQ1.includes(primerCaracter) && Q1.includes(monedas)) {
+        salida(primerCaracter);
+    } else if (letraQ2.includes(primerCaracter) && Q2.includes(monedas)) {
+        salida(primerCaracter);
+    } else if (letraQ3.includes(primerCaracter) && Q3.includes(monedas)) {
+        salida(primerCaracter);
+    } else if (letraQ4.includes(primerCaracter) && Q4.includes(monedas)) {
+        salida(primerCaracter);
     } else {
-        alert("El área de texto está vacío.");
-    }
-}
-
-function PrimeraLetra() {
-    // Obtener el valor del textarea por su ID
-    var texto = document.getElementById("miTextarea").value;
-
-    // Verificar si la cadena está vacía o es nula
-    if (texto && texto.length > 0) {
-        // Obtener la primera letra y mostrarla
-        return texto.charAt(0);
-    } else {
-        // Si la cadena está vacía o es nula, mostrar un mensaje de error
         alert(error);
     }
 }
+
 
 function salida(producto) {
     // Obtener el elemento div con la clase "salida"
