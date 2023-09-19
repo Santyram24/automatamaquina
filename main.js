@@ -1,5 +1,18 @@
 
 const error = "no es automata";//mensaje de error
+//letras validas para la cadena
+const letraQ1 = "ABC";
+const letraQ2 = "DE";
+const letraQ3 = "FG";
+const letraQ4 = "HI";
+
+//combinacion validas para la cadena
+const Q1 = ["Q"];
+const Q2 = ["1", "00"];
+const Q3 = ["000", "10", "01"];
+const Q4 = ["11", "100", "001", "010", "0000"];
+
+
 
 
 //funcion para ejecutar en el boton
@@ -8,10 +21,11 @@ document.getElementById('BotonPedir').addEventListener('click', pedir);
 function pedir() {
     //salida(PrimeraLetra());
     compararCadenas();
+
 }
 
 function compararCadenas() {
-    // Obtener el valor del textarea por su ID
+    //caja de texto
     var texto = document.getElementById("miTextarea").value.toString();
 
     // Verificar si el textarea contiene al menos un carácter
@@ -20,7 +34,7 @@ function compararCadenas() {
         var segundaCadena = texto.substring(1);
 
         // Comparar la cadena por defecto con la segunda cadena sin el primer carácter
-        var cadenaPorDefecto = "Hola"; // Cambia esto por tu cadena por defecto
+        var cadenaPorDefecto = "ola"; // Cambia esto por tu cadena por defecto
         if (cadenaPorDefecto === segundaCadena) {
             alert("Las cadenas son iguales sin el primer carácter.");
         } else {
