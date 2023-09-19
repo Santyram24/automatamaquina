@@ -33,6 +33,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin-top: 20px; /* Margen superior de 20px para los elementos de lista */
 }
 
+.valormonedas{
+    width: 200px; /* Ancho del elemento */
+    background-color:yellow; /* Color de fondo rojo */
+    height: 200px; /* Altura del elemento */
+    margin-left: 50px; /* Margen izquierdo de 50px */
+    margin-top: 300px; /* Margen superior de 80px */
+    position: absolute; /* Posicionamiento absoluto */
+}
+
+.valormonedas ul li{
+    list-style-type: none; /* Elimina los marcadores de lista */
+    margin-top: 20px; /* Margen superior de 20px para los elementos de lista */
+}
+
 /* Estilos para elementos con la clase "cajaexpendedora" */
 .cajaexpendedora {
     border: 5px solid black; /* Borde de 5px sólido en negro */
