@@ -1,5 +1,6 @@
 
-const error = "no es automata";//mensaje de error
+const error = "No es automata";//mensaje de error
+const good = "Es automata";//mensaje de que todo salio bien
 //letras validas para la cadena
 const letraQ1 = "ABC";
 const letraQ2 = "DE";
@@ -27,7 +28,7 @@ function compararCadenas() {
     var cadena = document.getElementById("miTextarea").value.toString();
 
     // Obtén el primer carácter del string
-    let primerCaracter = cadena.charAt(0);
+    let primerCaracter = cadena.charAt(0).toUpperCase();
     //quita el primer caracter y crea una nueva cadena
     let monedas = cadena.substring(1);
 
@@ -92,9 +93,17 @@ function salida(producto) {
             return;
     }
 
+    alert(good);//esto indica que todo salio bien
+
     // Establece el ancho de la imagen al 100%
     imagen.style.width = "100%";
 
     // Agrega la imagen como hijo del div
     div.appendChild(imagen);
+
+    // Obtén el elemento de textarea por su ID
+    let textarea = document.getElementById("miTextarea");
+
+    // Limpia el contenido del textarea
+    textarea.value = "";
 }
